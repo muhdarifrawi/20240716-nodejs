@@ -171,7 +171,7 @@
         {
             "language": "typescript",
             "source": [
-                "// for loop\nfor (let i = 0; i <= 10; i++){\n    console.log(i)\n}\n\nfor (i = 0; i <= 10; i++){\n    console.log(i)\n}\n\nfor (let i = 10; i >= 0; i--){\n    console.log(i)\n}"
+                "// for loop\nfor (let i = 0; i < 10; i++){\n    console.log(i)\n}\n\nfor (i = 0; i <= 10; i++){\n    console.log(i)\n}\n\nfor (let i = 10; i >= 0; i--){\n    console.log(i)\n}"
             ],
             "outputs": [
                 {
@@ -236,6 +236,52 @@
                     ]
                 }
             ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// vending machine as a function\n// call out the function\n// give a name to your function\n// close the function using brackets '(){}'\n// if required, place in your parameters/arguments\n// add in the codes within the function body '{}'\n// add return statment if necessary\n// parameter names are used within the function body\nfunction simpleVendingMachine(coins){\n    // function body\n    console.log(coins);\n    let itemCost = 5;\n    // this catches the 'empty' coins\n    if(coins === undefined || coins === 0 || coins === null){\n        console.log(\"no coins inserted\");\n    }\n    else if(coins < itemCost){\n        console.log(\"not enough\");\n    }\n    else if(coins > itemCost){\n        console.log(\"too much\");\n    }\n    else{\n        console.log(\"correct amount\");\n    }\n}\n\n// to use or call the function, we need to write it out\nsimpleVendingMachine();"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "undefined",
+                                "no coins inserted",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// global variable/scpoe\nlet plant = \"tomato\";\n\nfunction randomThings(){\n    // function scope\n    plant = \"chilli\";\n}\n\nif(plant == \"tomato\"){\n    plant = \"grape\";\n    // declaring within if statement \n    // will keep variable within it as well\n    let test = \"orange\"\n}\n\n// will cause error\n// console.log(test);\n\nconsole.log(plant);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "grape",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "1. create a div element using JS\n2. add an id called container\n3. add height and bg color to it\n4. add any type of event listener"
+            ],
+            "outputs": []
         }
     ]
 }
