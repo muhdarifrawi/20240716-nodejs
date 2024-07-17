@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 1\nWhat are the three ways you can declare and assign values into a variable? Using the following names and values, \\\ndeclare them with the three different ways of declaration: \\ \n`pi = 3.14 , fruit = \"apple\", cost = $5.`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 2\nGiven the following: \\\nAlex has 3 apples, Bernard has 6 apples and Charlie has 2 apples. \\\nDeclare and assign variables using the given values."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 3\n\nGiven that the area of a triangle is `1/2 x base x height`. Declare and assign \\\nusing the following variable names: `formulaOfTriangle`, `valueOfBase`, `valueOfHeight`. \\\nAssume that `valueOfBase` is `12` and `valueOfHeight` is `3`. \\\nUse `console.log()` to show the result of `formulaOfTriangle`."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 4\nGiven that a student scored 30 for his science exam, 43 for his math exam and \\\n44 for his english exam. Find the average score he has for his exam. \\\n**Each subject must be in their own variable**. "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 5\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
