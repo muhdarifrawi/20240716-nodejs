@@ -59,7 +59,35 @@
         {
             "language": "markdown",
             "source": [
-                "# Question 5\n"
+                "# Question 5\nCreate a simple `if... else` statement that shows if a person submitted their \\\nform, it will say \"form submitted\" and if they do not, it will say \"form not \\\nsubmitted\".\n\nUse `formStatus` as the variable name and `console.log()` to show the form status.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 6\nCreate a `if... else if... else` statment that tells user to bring the following \\\nitems during the stated weather conditions:\n- if sunny bring sunglasses\n- if rainy bring umbrella\n- if neither bring both"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 7"
             ],
             "outputs": []
         }

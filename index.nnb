@@ -282,6 +282,88 @@
                 "1. create a div element using JS\n2. add an id called container\n3. add height and bg color to it\n4. add any type of event listener"
             ],
             "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "- Objects\n- putting things inside arrays and objects\n- JSON\n- Promises\n- AJAX\n- APIs"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let simpleArray = [1,2,3,4,5,6];\n// square brackets\n// arrays uses indexes\nlet simpleObject = {name:\"Arif\", age:33, race:\"Boyan/Malay\"};\n// curly brackets\n// key:value pair\n\nconsole.log(simpleObject.age)\nconsole.log(simpleObject[\"age\"])"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "33",
+                                "33",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let number = 32;\nsimpleArray.push(number);\nconsole.log(simpleArray);\n\n\n// replacing exisiting value usnig existing key\nsimpleObject[\"age\"] =number;\nconsole.log(simpleObject);\n\nsimpleObject[\"location\"] = \"Here\";\nconsole.log(simpleObject);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[",
+                                "  1,  2,  3,  4, 5,",
+                                "  6, 32, 32, 32",
+                                "]",
+                                "{ name: 'Arif', age: 32, race: 'Boyan/Malay' }",
+                                "{ name: 'Arif', age: 32, race: 'Boyan/Malay', location: 'Here' }",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "JSON --> JavaScript Object Notation"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let simpleJSON = {\n    \"person a\":{\n        \"name\": \"abc\",\n        \"age\": 21\n    },\n    \"person b\":{\n        \"name\":\"cde\",\n        \"age\": 21\n    },\n    \"person c\":{\n        \"name\":\"fgh\",\n        \"age\": 21\n    }\n}\n\n\nconsole.log(simpleJSON);\nconsole.log(simpleJSON[\"person b\"][\"name\"]);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "{",
+                                "  'person a': { name: 'abc', age: 21 },",
+                                "  'person b': { name: 'cde', age: 21 },",
+                                "  'person c': { name: 'fgh', age: 21 }",
+                                "}",
+                                "cde",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
