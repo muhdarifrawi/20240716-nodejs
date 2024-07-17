@@ -1,0 +1,241 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "- declaration of variables:\n    - var -> can redeclare and re-assign\n    - let -> cannot redeclare but can re assign\n    - const -> can't change value\n\n\n    var turtle = 1;\n    var turtle = 4; // this is fine\n\n    let lion = 4;\n    let lion = 7; // this will not work. error will occur\n    lion = 8; // this is correct\n\n    const zebra = 7;\n    const zebra = 9; // wrong\n    zebra = 10; // wrong\n\n\n -data types (primitive):\n    - string\n    - numbers (float and int)\n    - booleans (true / false)\n\n- conditional statments (if ... else if ... else)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let string = \"this is a normal string\"\nstring = \"Ginny's a little girl. And Harry's is too.\"\n\nstring = \"Ginny' dad said: \\\"hi how was your day?\\\".\"\nstring = `Ginny's dad said: \"hi how was your day?\"`\n\nstring = \"Dear Mama, \\n\\tI am fine. I am writing to you to let you know I need food.\"\n\nconsole.log(string);\n\nstring = `Dear Mama,\n    I am fine. I am just writing so that I can have more food.`\n\nconsole.log(string);\n\nlet username = \"Arif\";\nlet message = `Dear ${username}, We are happy to have you back.`\nconsole.log(message);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Dear Mama, ",
+                                "\tI am fine. I am writing to you to let you know I need food.",
+                                "Dear Mama,",
+                                "    I am fine. I am just writing so that I can have more food.",
+                                "Dear Arif, We are happy to have you back.",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// if else statements\n\nif (true) {\n    // code here\n    console.log(\"hello\")\n}\n\nlet isRaining = true;\n\nif (isRaining){ // this also meas isRaining == true\n    console.log(\"bring umbrella\")\n}\nelse{\n    console.log(\"have fun in the sun\")\n}\n\n// and --> && --> (a == ?? && b == ??)\n// or --> || --> (a == ?? || b == ??)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "hello",
+                                "bring umbrella",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "fizz buzz\n\nwhen divisible by both 3 and 5 say fizz buzz \\\nwhen it is divisiable by 3 say fizz \\\nwhen divisible by 5 say buzz \\\nif neither, print out the number\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let number = 5;\n\nif (number%3 == 0 && number %5 == 0){\n    console.log(\"fizzbuzz\")\n}\nelse if(number % 3 == 0){\n    console.log(\"fizz\")\n}\nelse if(number % 5 == 0 ){\n    console.log(\"buzz\")\n}\nelse{\n    console.log(number)\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "fizz",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "and --> && \nor --> ||\n\na < x < b --> a < x && x < b\n\nAND \nx       y       result\ntrue    true    true\ntrue    false   false\nfalse   true    false\nfalse   false   false\n\nOR\nx       y       result\ntrue    true    true\ntrue    false   true\nfalse   true    true\nfalse   false   false\n\ntrue = 1\nfalse = 0\n\nx = true\ny = false\n\nAND\nx * y = true * false = 1 * 0 = 0\n\nOR\nx + y = true + false = 1 + 0 = 1\n\n! not -> inverts the result\n\n!true -> false\n!false -> true\n\n!(true && false) --> !(false) --> true\n\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "// strings --> substrings\n// slice splicing \n// turning strings into arrays\n// uppercases, lowercases\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let statement = \"peter piper pick a pack of pickled pepper\";\n\nconsole.log(statement.slice(3,9));\nconsole.log(statement.slice(3));\nconsole.log(statement.slice(-5));\n\nlet slicedStats = statement.slice(4,7);\n\nconsole.log(slicedStats);\n\nlet user = \"Peter Pipier\";\nlet lengthOfName = user.length;\nconsole.log(lengthOfName);\n\nif (lengthOfName > 10){\n    console.log(\"name too long. must be 10 characters\");\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "er pip",
+                                "er piper pick a pack of pickled pepper",
+                                "epper",
+                                "r p",
+                                "12",
+                                "name too long. must be 10 characters",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "arrays\n\nlet array = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\"];\n\narray[5]"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let array = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\"];\n\nconsole.log(array[5])\n\nconsole.log(array.find(function(i){return i==\"z\" }))"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "f",
+                                "undefined",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let numberStack = [3,6,9,12,43,56,23];\n\nconsole.log(numberStack.find(function(i){return i%3 == 0 }))\nconsole.log(numberStack.filter(function(i){return i%3 == 0 }))\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "3",
+                                "[ 3, 6, 9, 12 ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "two kinds of loops\nfor --> auto stops \nwhile --> requires a condition to stop\n\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// for loop\nfor (let i = 0; i <= 10; i++){\n    console.log(i)\n}\n\nfor (i = 0; i <= 10; i++){\n    console.log(i)\n}\n\nfor (let i = 10; i >= 0; i--){\n    console.log(i)\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0",
+                                "1",
+                                "0",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// while loop\n\n// flag variable\nlet flag = true\nwhile(flag == true){\n    console.log(\"hello!\")\n    flag = false\n}\n\n// counter\nlet whileCounter = 0;\nwhile (whileCounter < 10){\n    console.log(\"world\");\n    whileCounter = whileCounter + 1;\n}\n\n// conditionals\n// === --> checks for value AND data type\n// == --> checks for value only\n// !=\n// >\n// <\n// =>\n// =<\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "hello!",
+                                "world",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Functions\n\nheight \nwidth\n\narea of triangle? 1/2 * w * h\narea of square? h * w\narea of circle? --> pi * r * r\n\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// functions\n// call out 'function'\n// give a name to the function, here we call it 'areaOfTriangle'\n// we pass parameters within the () if needed. in this case we do need them.\n// we give names to the parameters: height and width\n// within the function, we use the parameters\n// we then output/pass the result by using 'return'\nfunction areaOfTriangle(height, width){\n    let area = 0.5 * height * width\n    return area\n}\n\nfunction exampleOne(){\n    return \"hello\"\n}\n\nfunction exapleTwo(param1,param2){\n    let total = param1 + param2\n}\n\n\n// to use the function\nconsole.log(areaOfTriangle(5,3))\n\nlet formula = areaOfTriangle(4,5)\nconsole.log(formula)\n\nlet heightExample = 43\nlet widthExample = 32;\nlet area = areaOfTriangle(heightExample,widthExample);\n\nconsole.log(area)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "7.5",
+                                "10",
+                                "688",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
