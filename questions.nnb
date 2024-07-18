@@ -73,7 +73,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Question 6\nCreate a `if... else if... else` statment that tells user to bring the following \\\nitems during the stated weather conditions:\n- if sunny bring sunglasses\n- if rainy bring umbrella\n- if neither bring both"
+                "# Question 6\nCreate a `if... else if... else` statment that tells user to bring the following \\\nitems during the stated weather conditions:\n- if sunny bring sunglasses\n- if rainy bring umbrella\n- if both sunny and rainy say: stay indoors\n- if neither bring both"
             ],
             "outputs": []
         },
@@ -87,7 +87,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Question 7\nCreate a `if... else if... else` statement that does the following:\n- outputs \"roll\" when divisible by 2\n- outputs \"poll\" when divisible by 6\n- outputs \"roll poll\" when divisible by both 2 and 6\n- outputs the number when not divisible by any\n\nUse `console.log()` to display your output."
+                "# Question 7\nCreate a `if... else if... else` statement that does the following:\n- outputs \"roll\" when divisible by 2\n- outputs \"poll\" when divisible by 6\n- outputs \"roll poll\" when divisible by both 2 and 6\n- outputs the number when not divisible by any\n\nUse `console.log()` to display your output. Use `number` as a variable name <br>\nand assume any value."
             ],
             "outputs": []
         },

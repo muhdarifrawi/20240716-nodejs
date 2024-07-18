@@ -1,0 +1,338 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 1\nWhat are the three ways you can declare and assign values into a variable? Using the following names and values, \\\ndeclare them with the three different ways of declaration:\n\n`pi = 3.14 , fruit = \"apple\", cost = $5.`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// the three ways are: const, var and let\nconst pi = 3.14;\nvar fruit = \"apple\";\n// use let if you don't know the diff between const and let. it's safer.\nlet cost = 5;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 2\nGiven the following: \\\nAlex has 3 apples, Bernard has 6 apples and Charlie has 2 apples. \\\nDeclare and assign variables using the given values."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let alex = 3;\nlet bernard = 6;\nlet charlie = 2;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 3\n\nGiven that the area of a triangle is `1/2 x base x height`. Declare and assign \\\nusing the following variable names: `formulaOfTriangle`, `valueOfBase`, `valueOfHeight`. \\\nAssume that `valueOfBase` is `12` and `valueOfHeight` is `3`. \\\nUse `console.log()` to show the result of `formulaOfTriangle`."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let valueOfBase = 12;\nlet valueOfHeight = 3;\n\nlet formulaOfTriangle = 1/2 * valueOfBase * valueOfHeight;\n// alternate: let formulaOfTriangle = 0.5 * valueOfBase * valueOfHeight;\n\nconsole.log(formulaOfTriangle);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "18",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 4\nGiven that a student scored 30 for his science exam, 43 for his math exam and \\\n44 for his english exam. Find the average score he has for his exam. \\\n**Each subject must be in their own variable**. "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let science = 30;\nlet math = 43;\nlet english = 44;\nlet average = (science + math + english)/3;\n\nconsole.log(average);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "39",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 5\nCreate a simple `if... else` statement that shows if a person submitted their \\\nform, it will say \"form submitted\" and if they do not, it will say \"form not \\\nsubmitted\".\n\nUse `formStatus` as the variable name and `console.log()` to show the form status.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let formStatus = false;\n\nif(formStatus == true){\n// alternate: if(formStatus)\n    console.log(\"Form submitted!\")\n}\nelse{\n    console.log(\"Form not submitted...\");\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 6\nCreate a `if... else if... else` statment that tells user to bring the following \\\nitems during the stated weather conditions:\n- if sunny bring sunglasses\n- if rainy bring umbrella\n- if both sunny and rainy say: stay indoors\n- if neither bring both"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "isSunny = false;\nisRainy = false;\n\nif(isSunny == true && isRainy == true){\n    console.log(\"Stay indoors\");\n}\nelse if(isSunny == true){\n    console.log(\"Bring sunglasses\");\n}\nelse if(isRainy == true){\n    console.log(\"Bring umbrels\");\n}\nelse{\n    console.log(\"Bring both\");\n}\n\n// alternate:\n// if(isSunny && isRainy){\n//     console.log(\"Stay indoors\");\n// }\n// else if(isSunny){\n//     console.log(\"Bring sunglasses\");\n// }\n// else if(isRainy){\n//     console.log(\"Bring umbrels\");\n// }\n// else{\n//     console.log(\"Bring both\");\n// }"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Bring both",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 7\nCreate a `if... else if... else` statement that does the following:\n- outputs \"roll\" when divisible by 2\n- outputs \"poll\" when divisible by 6\n- outputs \"roll poll\" when divisible by both 2 and 6\n- outputs the number when not divisible by any\n\nUse `console.log()` to display your output. Use `number` as a variable name <br>\nand assume any value."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let number = 9;\n\nif(number%2 == 0 && number%6 == 0){\n    console.log(\"roll poll\");\n}\nelse if(number%2 == 0){\n    console.log(\"roll\");\n}\nelse if(number%6 == 0){\n    console.log(\"poll\");\n}\nelse{\n    console.log(number);\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "9",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 8\nCreate a simple `for` loop that increments by 3 from 0 to 21. <br> \nUse `console.log()` to display the output.\n\n> Hint: +="
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "for(i=0;i<=21;i+=3){\n    console.log(i);\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0",
+                                "18",
+                                "21",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 9\nCreate an incrementing `while` loop that stops when the number reaches 11. \\\nUse `console.log()` to display your output.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let counter = 0;\n\nwhile(counter <=11){\n    console.log(counter);\n    // don't forget to increment\n    counter ++;\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0",
+                                "1",
+                                "2",
+                                "3",
+                                "4",
+                                "5",
+                                "6",
+                                "7",
+                                "8",
+                                "9",
+                                "10",
+                                "11",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 10\nIterate through the given array:\n`[3,6,9,12,15,18,21,24]`\n\nUse `console.log()` to display your output.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let simpleArr = [3,6,9,12,15,18,21,24];\n\n// for loop type\nfor(i=0; i<simpleArr.length;i++){\n    console.log(simpleArr[i]);\n}\n\n// while loop type\ncounter = 0;\nwhile(counter < simpleArr.length){\n    console.log(simpleArr[counter]);\n    // increment don't forget~!\n    counter++;\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "3",
+                                "6",
+                                "9",
+                                "12",
+                                "15",
+                                "18",
+                                "21",
+                                "24",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 11\nGiven the array: `[10,11,12,13,14,15,16,17,18,19]`\n\nLoop through the given array and output **numbers divisible by 3**\n\nUse `console.log()` to display your output."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let simpleArr = [10,11,12,13,14,15,16,17,18,19];\n\n// for loop type\nfor(i=0; i<simpleArr.length;i++){\n    if(simpleArr[i]%3 == 0){\n        console.log(simpleArr[i]);\n    }\n}\n\n// while loop type\ncounter = 0;\nwhile(counter < simpleArr.length){\n    if(simpleArr[counter]%3 == 0){\n        console.log(simpleArr[counter]);\n    }\n    // increment don't forget~!\n    counter++;\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "12",
+                                "15",
+                                "18",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m0\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 12\nCreate a simple function named `helloWorld` that will output \"Hello World!\" <br>\nwhen executed. \n\nUse `console.log()` to display your output."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// summon function\n// name the function\n// use console.log()\n\nfunction helloWorld(){\n    console.log(\"Hello World!\")\n}\n\nhelloWorld();"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hello World!",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 13\nCreate and execute a function named `addition` that takes in two integer parameters/arguments and <br>\noutputs the sum of the two parameters/arguments.\n\nUse `console.log()` to display your output. "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// summon function\n// name the function\n// declare parameters\n// console.log\nfunction addition(a,b){\n    let total = a + b\n    console.log(total);\n}\n\naddition(2,3);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
