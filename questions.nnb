@@ -3,7 +3,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Question 1\nWhat are the three ways you can declare and assign values into a variable? Using the following names and values, \\\ndeclare them with the three different ways of declaration: \\ \n`pi = 3.14 , fruit = \"apple\", cost = $5.`"
+                "# Question 1\nWhat are the three ways you can declare and assign values into a variable? Using the following names and values, \\\ndeclare them with the three different ways of declaration:\n\n`pi = 3.14 , fruit = \"apple\", cost = $5.`"
             ],
             "outputs": []
         },
@@ -87,7 +87,98 @@
         {
             "language": "markdown",
             "source": [
-                "# Question 7"
+                "# Question 7\nCreate a `if... else if... else` statement that does the following:\n- outputs \"roll\" when divisible by 2\n- outputs \"poll\" when divisible by 6\n- outputs \"roll poll\" when divisible by both 2 and 6\n- outputs the number when not divisible by any\n\nUse `console.log()` to display your output."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 8\nCreate a simple `for` loop that increments by 3 from 0 to 21. <br> \nUse `console.log()` to display the output.\n\n> Hint: +="
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 9\nCreate an incrementing `while` loop that stops when the number reaches 11. \\\nUse `console.log()` to display your output.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 10\nIterate through the given array:\n`[3,6,9,12,15,18,21,24]`\n\nUse `console.log()` to display your output.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 11\nGiven the array: `[10,11,12,13,14,15,16,17,18,19]`\n\nLoop through the given array and output **numbers divisible by 3**\n\nUse `console.log()` to display your output."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 12\nCreate a simple function named `helloWorld` that will output \"Hello World!\" <br>\nwhen executed. \n\nUse `console.log()` to display your output."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Question 13\nCreate and execute a function named `addition` that takes in two integer parameters/arguments and <br>\noutputs the sum of the two parameters/arguments.\n\nUse `console.log()` to display your output. "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
             ],
             "outputs": []
         }
